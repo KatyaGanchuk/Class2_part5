@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+using namespace std;
+int main() {
+int a, k = 0;
+double summa = 0;
+cin >> a;
+while (summa < a) {
+k++;
+summa += 1 / (double)k;
+}
+cout << "summa = " << summa << endl;
+cout << "k = " << k << endl
