@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+using namespace std;
+int main() {
+ float e;
+   cout << " Imput e";
+   cin >> e;
+   float AK1=0,AK=2;
+   int K=1;
+   while (abs(AK-AK1)>=e) {
+       ++K;
+       AK1=AK;
+      AK=2+1/AK1;
+   }
+   cout << "K= " << K<<endl; 
+   cout<<" A(k-1)=" << AK1<<endl;
+   cout<<"A(k)=" << AK<<endl;
+}
