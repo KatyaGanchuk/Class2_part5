@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+using namespace std;
+int main() {
+int n;
+    cout << "Namber";
+    cin >> n;
+    int summa = 0, namber = 0;
+    while (n > 0) {
+        ++namber;
+        summa += n % 10;
+        n /= 10;
+    }
+    cout<<"Namber="<< namber<<endl;
+    cout<<"Summa="<< summa;
+}
